@@ -1,0 +1,90 @@
+*{
+    margin:0;
+}
+body{
+    background-image: url(Bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.video{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    background-size: contain;
+}
+video{
+    width: 100%;
+}
+.dataContainer{
+    width: fit-content;
+    height: 250px;
+    padding: 20px;
+    /* border: 2px red solid; */
+    border-radius: 20px 100px;
+    background-image: linear-gradient(rgba(240, 248, 255, 0.222),rgba(0, 255, 255, 0.37));
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h2{
+    margin:20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative;
+    top:-120px; */
+}
+button{
+    width:100px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    /* position: relative;
+    top:-120px; */
+    /* border: none; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+button:hover{
+    animation: flash 2s ease-in-out  alternate infinite;
+}
+@keyframes flash {
+    0%,100%{
+        opacity: 1;
+    }
+    
+    50%{
+        opacity: 0.2;
+        background-color: black;
+    }
+}
+input{
+    width:180px;
+    height: 25px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(164, 184, 209, 0.245);
+    color: white;
+    font-size: 16px;
+}
+p{
+    line-height: 25px;
+}
+#city{
+    text-align: center;
+}
